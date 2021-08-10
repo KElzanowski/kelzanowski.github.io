@@ -1,0 +1,259 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+body {
+    background-color: #1A1A1A;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+#Logo {
+    position: absolute;
+    z-index: 100;
+    left: 0px;
+    top: 0px;
+    border-radius: 75px;
+}
+@media screen and (max-width: 115em) {
+    #Logo {display: none;}
+}
+.Header {
+    background-color: #1A1A1A;
+    position: fixed;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+}
+.Links {
+    position: fixed;
+    display: inline-flex;
+    justify-content: center;
+    height: 60px;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+@media screen and (max-width: 80em) {
+    .Links {display: none;}
+}
+.Text_Links:link {
+    color: black;
+    text-decoration: none;
+}
+.Text_Links:visited {
+    color: black;
+    text-decoration: none;
+}
+.Text_Links:hover {
+    color: black;
+    text-decoration: none;
+}
+.Text_Links:active {
+    color: red;
+    text-decoration: none;
+}
+.Social_Icons {
+    position: fixed;
+    display: inline-flex;
+    justify-content: center;
+    height: 65px;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    padding-top: 15px;
+}
+@media screen and (max-width: 60em) {
+    .Social_Icons {display: none;}
+}
+a.Nav_Links:link {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+}
+a.Nav_Links:visited {
+   color: White;
+   text-decoration: none;
+   font-size: 32px;
+}
+a.Nav_Links:hover {
+   color: White;
+   text-decoration: none;
+   font-size: 32px;
+   transform: scale(1.1);
+}
+a.Nav_Links:active {
+   color: red;
+   text-decoration: none;
+   font-size: 32px;
+   font-weight: bold;
+}
+#About_Me_Button {
+    margin-left: 111px;
+}
+#My_Work_Button {
+    margin-left: 111px;
+}
+#SocietyLogo:hover {
+    transform: scale(1.1);
+}
+#RedbubbleLogo {
+    margin-left: 50px;
+}
+#RedbubbleLogo:hover {
+    transform: scale(1.1);
+    }
+#InstaLogo {
+    margin-left: 50px;
+}
+#InstaLogo:hover {
+    transform: scale(1.1);
+}
+#EmailLogo {
+    margin-left: 50px;
+}
+#EmailLogo:hover {
+    transform: scale(1.1);
+}
+#GithubLogo {
+    margin-left: 50px;
+}
+#GithubLogo:hover {
+    transform: scale(1.1);
+}
+#Design {
+    margin-top: 80px;
+}
+#About_Me {
+    padding-top: 80px;
+    display: flex;
+    width: 100%;
+    height: 880px;
+    margin: auto;
+}
+.Top_Left_Panel {
+    background-color: silver;
+    left: 0px;
+    width: 50%;
+    height: 400px;
+}
+.Top_Right_Panel {
+    background-color: gray;
+    right: 0px;
+    width: 50%;
+    height: 400px;
+    text-align: center;
+}
+.Bottom_Left_Panel {
+    position: absolute;
+    background-color: gray;
+    left: 0px;
+    width: 50%;
+    height: 400px;
+    margin-top: 400px;
+}
+.Bottom_Right_Panel {
+    position: absolute;
+    background-color: silver;
+    right: 0px;
+    width: 50%;
+    height: 400px;
+    margin-top: 400px;
+}
+.Introduction {
+    color: black;
+    text-align: center;
+    margin-top: 175px;
+    font-size: 23px;
+    font-weight: bold;
+}
+.Outroduction {
+    color: black;
+    text-align: center;
+    margin-top: 160px;
+    font-size: 23px;
+    font-weight: bold;
+}
+@media screen and (max-width: 35em) {
+    .Outroduction {display: none;}
+}
+#Portrait_Icon {
+    margin-top: 50px;
+    border-radius: 150px;
+    border: 4px solid white;
+}
+.Skill_Bars {
+    margin: auto;
+    margin-top: 28px;
+    width: 75%;
+    border: 4px solid white;
+    border-radius: 10px;
+    background-color: silver;
+}
+.Bar {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+.Photoshop {
+    width: 80%;
+    background-color: red;
+    border-radius: 5px;
+}
+.Illustrator {
+    width: 70%;
+    background-color: red;
+    border-radius: 5px;
+}
+.HTML {
+    width: 75%;
+    background-color: red;
+    border-radius: 5px;
+}
+.CSS {
+    width: 65%;
+    background-color: red;
+    border-radius: 5px;
+}
+.Python {
+    width: 55%;
+    background-color: red;
+    border-radius: 5px;
+}
+.Footer {
+    position: absolute;
+    background-color: white;
+    margin-bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+.Email_Text_Link {
+    display: inline-flex;
+    margin-top:  10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 270px;
+}
+@media screen and (max-width: 90em) {
+    .Email_Text_Link {display: none;}
+}
+.Footer_Name {
+    display: inline-flex;
+    margin-top:  10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 460px;
+}
+@media screen and (max-width: 60em) {
+    .Footer_Name {display: none;}
+}
