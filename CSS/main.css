@@ -101,3 +101,21 @@ body {
 .footer-copyright {
     color: black;
 }
+
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        transform: none;
+        text-align: center;
+    }
+ 
+    .description p {
+        font-size: 1.2rem;
+    }
+
+    #Logo {
+        width: 125px;
+    }
+}
