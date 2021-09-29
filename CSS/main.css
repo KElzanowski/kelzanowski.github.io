@@ -96,12 +96,11 @@ body {
 .page-footer {
     background-color: white;
     color: black;
-    padding: 25px 0 25px;
+    padding: 25px 0 15px;
     text-align: center;
 }
-.footer-copyright {
-    color: black;
-    text-align: center;
+.Footer_Text {
+    font-size: 1.3rem;
 }
 
 @media (max-width: 575.98px) {
@@ -122,6 +121,10 @@ body {
     }
 
     #Skillset {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+    }
+
+    .Footer_Text {
+        font-size: 1.2rem;
     }
 }
