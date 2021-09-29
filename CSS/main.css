@@ -97,9 +97,11 @@ body {
     background-color: white;
     color: black;
     padding: 25px 0 25px;
+    text-align: center;
 }
 .footer-copyright {
     color: black;
+    text-align: center;
 }
 
 @media (max-width: 575.98px) {
@@ -117,5 +119,9 @@ body {
 
     #Logo {
         width: 125px;
+    }
+
+    #Skillset {
+        font-size: 1.3rem;
     }
 }
