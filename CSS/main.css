@@ -105,7 +105,8 @@ body {
 
 @media (max-width: 575.98px) {
     .description {
-        left: 0;
+        left: 15px;
+	right: 15px;
         padding: 0 15px;
         position: absolute;
         transform: none;
