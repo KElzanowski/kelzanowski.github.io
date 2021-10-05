@@ -111,6 +111,7 @@ body {
         position: absolute;
         transform: none;
         text-align: center;
+	transform: translate(0%, -20%);
     }
  
     .description p {
