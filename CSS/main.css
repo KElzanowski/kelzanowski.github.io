@@ -103,7 +103,7 @@ body {
     font-size: 1.3rem;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 600px) {
     .description {
         left: 15px;
 	right: 15px;
@@ -111,7 +111,7 @@ body {
         position: absolute;
         transform: none;
         text-align: center;
-	transform: translate(0%, -20%);
+	transform: translate(0%, -25%);
     }
  
     .description p {
