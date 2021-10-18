@@ -1,2 +1,2 @@
 # kelzadesigns
-My portfolio website created using HTML and CSS.
+My portfolio website created using HTML, CSS and a little bit of JavaScript.
