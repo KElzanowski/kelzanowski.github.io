@@ -49,7 +49,7 @@ body {
 	left: 50%;
 	position: absolute;
 	top: 50%;
-	transform: translate(-50%, -35%);
+	transform: translate(-50%, -30%);
 }
 
 .description p {
@@ -103,13 +103,15 @@ body {
     font-size: 1.3rem;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 600px) {
     .description {
-        left: 0;
+        left: 15px;
+        right: 15px;
         padding: 0 15px;
         position: absolute;
         transform: none;
         text-align: center;
+        transform: translate(0%, -25%);
     }
  
     .description p {
