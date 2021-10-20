@@ -106,12 +106,12 @@ body {
 @media (max-width: 600px) {
     .description {
         left: 15px;
-        right: 15px;
+	    right: 15px;
         padding: 0 15px;
         position: absolute;
         transform: none;
         text-align: center;
-        transform: translate(0%, -25%);
+	    transform: translate(0%, -25%);
     }
  
     .description p {
