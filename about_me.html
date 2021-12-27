@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelza: Home Page</title>
+    <title>Kelza Designs: About Me</title>
     <link rel="shortcut icon" type="image/jpg" href="Content/Favicon.png"/>
-    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="CSS/about_me.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <div id="page-container">
 
     <nav class="navbar fixed-top navbar-expand-md" role="navigation">
 
@@ -31,10 +32,10 @@
             <ul class="nav navbar-nav align-items-end">
 
                 <li class="nav-item active">
-                    <a class="nav-link" href="#Logo"><strong><u>Home</u></strong></a>
+                    <a class="nav-link" href="index.html"><strong>Home</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="About_Me.html"><strong>About Me</strong></a>
+                    <a class="nav-link" href="About_Me.html"><strong><u>About Me</u></strong></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="work.html"><strong>My Work</strong></a>
@@ -48,15 +49,28 @@
         </div>
     </nav>
 
-    <header class="page-header header container-fluid">
-        <div class="description">
-            <p><strong>Klaud, 20, Polish Web Designer, Pixel Artist and Graphic Design University Student in England.
-            Computer and Video Game Nerd, Music Lover and Beginner Web Developer!</strong></p>
+    <div id="content-wrap">
+    <div class="container-fluid features overflow-hidden">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"><h1>Friendly, hardworking and organised.</h1></div>
+            <div class="col"></div>
         </div>
-    </header>
+        <div class="row gy-4">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-6">
+                <img id="Profile_Picture" class="m-auto" src="Content/Front Page/Me Picture.png">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-6">
+                <p id="Skillset" class="d-block m-auto">Adobe Illustrator, Photoshop, and Premiere Pro. HTML, CSS, Python, and JavaScript.<br><br>
+                Web Design and Development, Pixel Art, Posters, and Product Graphic Design.<br><a class="Text_Link" href="/work.html">Explore My Work</a>!<br><br>
+                Designs Sold on <a class="Text_Link" href="https://society6.com/ketdr">Society6</a> and <a class="Text_Link" href="https://www.redbubble.com/people/ketdr/shop?asc=u">Redbubble</a>.<br><br>
+                Follow Me on <a class="Text_Link" href="https://www.instagram.com/kelzadesigns/">Instagram</a>! Find My Code on <a class="Text_Link" href="https://github.com/KelzaPrograms">GitHub</a></a>.<br><br>
+                I am an avid tech enthusiast who loves learning new things. My love for art and design, combined with my curiosity for computers and software has driven my interest towards web design and development surrounding my future career after university.</p></div>
+    </div>
+    </div>
 
     <footer class="page-footer">
-        <div class="container text-center">
+        <div class="container-fluid text-center">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <p class="Footer_Text"><strong>kelzadesigns@gmail.com</strong></p>
@@ -67,13 +81,14 @@
         <div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="about_me.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+</div>
 </body>
 
 </html> 

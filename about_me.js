@@ -7,5 +7,5 @@ ready(() => {
 })
 
 $(window).scroll(function(){
-    $("#Logo").css("opacity", 1 - $(window).scrollTop() / 115);
+    $("#Logo").css("opacity", 1 - $(window).scrollTop() / 750);
 });
