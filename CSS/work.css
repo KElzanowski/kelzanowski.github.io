@@ -80,11 +80,10 @@ h1 {
     text-align: center;
 }
 
-#Profile_Picture {
+#Picture {
     width: 500px;
     display: block;
     padding-top: 80px;
-    border-radius: 50%;
 }
 
 #Skillset {
@@ -111,8 +110,8 @@ h1 {
 .page-footer {
     position: absolute;
     width: 100%;
-    background-color: white;
-    color: #1a1a1a;
+    background-color: #1a1a1a;
+    color: white;
     padding: 25px 0 15px;
     text-align: center;
     margin-top: 20px;
