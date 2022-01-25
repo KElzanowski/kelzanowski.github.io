@@ -10,8 +10,33 @@ body {
     min-height: 102vh;
 }
 
-#content-wrap {
-    padding-bottom: 80px
+.container {
+    position: absolute;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.thumbnail {
+    position: relative;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.center-text {
+    text-align: center;
+    font-family: 'Nanum Gothic Coding', monospace;
+    color: #1a1a1a;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 50%;
+    border-radius: 2rem;
+}
+
+img {
+    border-radius: 1em;
 }
 
 #Logo {
@@ -73,30 +98,6 @@ background-color: gray;
         position: relative;
 }
 
-h1 {
-    color: #1a1a1a;
-    padding-top: 80px;
-    font-family: 'Nanum Gothic Coding', monospace;
-    text-align: center;
-}
-
-#Picture {
-    width: 500px;
-    display: block;
-    padding-top: 80px;
-}
-
-#Skillset {
-    font-family: 'Nanum Gothic Coding', monospace;
-    padding-top: 80px;
-    padding-bottom: 40px;
-    border-radius: 1.3rem;
-    color: #1a1a1a;
-        font-size: 1.3rem;
-        line-height: 1.5;
-    text-align: center;
-}
-
 .Text_Link {
     text-decoration: underline;
     color: #1a1a1a;
@@ -108,7 +109,7 @@ h1 {
 }
 
 .page-footer {
-    position: absolute;
+    position: relative;
     width: 100%;
     background-color: #1a1a1a;
     color: white;
@@ -126,15 +127,11 @@ h1 {
         width: 125px;
     }
 
-    #Profile_Picture {
-        width: 80%;
-    }
-
-    #Skillset {
-        font-size: 1.2rem;
-    }
-
     .Footer_Text {
         font-size: 1rem;
+    }
+
+    .center-text {
+        font-size: 1.5rem;
     }
 }
