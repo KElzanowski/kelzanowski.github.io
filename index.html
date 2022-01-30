@@ -13,14 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta http-equiv="imagetoolbar" content="no"/>
 </head>
 
 <body>
+    <div id="page-container">
 
     <nav class="navbar fixed-top navbar-expand-md" role="navigation">
 
         <div class="navbar-brand">
-            <img id="Logo" src="Content/Front Page/Pixel Logo.png" width="150">
+            <img id="Logo" src="Content/Front Page/Pixel Logo.png">
         </div>
 
         <button class="navbar-toggle custom-toggler d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#headernav">
@@ -48,12 +50,14 @@
         </div>
     </nav>
 
-    <header class="page-header header container-fluid">
-        <div class="description">
-            <p><strong>Klaud, 20, Polish Web Designer, Pixel Artist and Graphic Design University Student in England.
-            Computer and Video Game Nerd, Music Lover and Beginner Web Developer!</strong></p>
-        </div>
-    </header>
+    <div id="content-wrap">
+        <header class="page-header header container-fluid">
+            <div class="description">
+                <p><strong>Klaud, 20, Polish Web Designer, Pixel Artist and Graphic Design University Student in England.
+                Computer and Video Game Nerd, Music Lover and Beginner Web Developer!</strong></p>
+            </div>
+        </header>
+    </div>
 
     <footer class="page-footer">
         <div class="container text-center">
@@ -63,11 +67,14 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <p class="Footer_Text"><strong>Designed and Developed by Klaudiusz Elzanowski</strong></p>
+                </div>
             </div>
-        <div>
+        </div>
     </footer>
 
-    <script src="main.js"></script>
+    </div>
+
+    <script src="JS/main.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="

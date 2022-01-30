@@ -7,5 +7,11 @@ ready(() => {
 })
 
 $(window).scroll(function(){
-    $("#Logo").css("opacity", 1 - $(window).scrollTop() / 750);
-});
+    if ($(window).width() > 600) {
+        $("#Logo").css("opacity", 1 - $(window).scrollTop() / 650);
+}});
+
+$(window).scroll(function(){
+    if ($(window).width() <= 600) {
+        $("#Logo").css("opacity", 1 - $(window).scrollTop() / 1200);
+}});

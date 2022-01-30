@@ -11,19 +11,21 @@ body {
 }
 
 #content-wrap {
-    padding-bottom: 80px
+    padding-bottom: 5em;
 }
 
 #Logo {
+    width: 7.5em;
     position: absolute;
     border-radius: 75px;
     top: 0px;
     left: 0px;
+    pointer-events: none;
 }
 
 .navbar {
     background: #1a1a1a;
-    height: 80px;
+    height: 5em;
 }
 
 .nav-link {
@@ -75,22 +77,23 @@ background-color: gray;
 
 h1 {
     color: #1a1a1a;
-    padding-top: 80px;
+    padding-top: 2.5em;
     font-family: 'Nanum Gothic Coding', monospace;
     text-align: center;
 }
 
 #Profile_Picture {
-    width: 500px;
+    width: 30em;
     display: block;
-    padding-top: 80px;
+    padding-top: 5em;
     border-radius: 50%;
+    pointer-events: none;
 }
 
 #Skillset {
     font-family: 'Nanum Gothic Coding', monospace;
-    padding-top: 80px;
-    padding-bottom: 40px;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
     border-radius: 1.3rem;
     color: #1a1a1a;
 	font-size: 1.3rem;
@@ -114,6 +117,7 @@ h1 {
     background-color: white;
     color: #1a1a1a;
     padding: 25px 0 15px;
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
     margin-top: 20px;
     bottom: 0;
@@ -122,9 +126,27 @@ h1 {
     font-size: 1.1rem;
 }
 
+@media (max-width: 1200px) {
+    #Profile_Picture {
+        width: 25em;
+    }
+}
+
+@media (max-width: 1000px) {
+    #Profile_Picture {
+        width: 20em;
+    }
+}
+
+@media (max-width: 800px) {
+    #Profile_Picture {
+        width: 18em;
+    }
+}
+
 @media (max-width: 600px) {
     #Logo {
-        width: 125px;
+        width: 6em;
     }
 
     #Profile_Picture {
@@ -137,5 +159,9 @@ h1 {
 
     .Footer_Text {
         font-size: 1rem;
+    }
+
+    .navbar {
+        height: 4em;
     }
 }
