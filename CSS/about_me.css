@@ -101,6 +101,10 @@ h1 {
     text-align: center;
 }
 
+.Bold_Text {
+    font-weight: 600;
+}
+
 .Text_Link {
     text-decoration: underline;
     color: #1a1a1a;

@@ -9,10 +9,6 @@ body {
     min-height: 102vh;
 }
 
-#content-wrap {
-    padding-bottom: 6em;
-}
-
 #Logo {
     width: 7.5em;
     position: absolute;
@@ -97,7 +93,7 @@ background-color: gray;
 }
 
 .page-footer {
-    position: absolute;
+    position: relative;
     width: 100%;
     background-color: white;
     color: #1a1a1a;
