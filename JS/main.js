@@ -6,11 +6,6 @@ ready(() => {
     document.querySelector(".header").style.height = window.innerHeight + "px";
 })
 
-$(window).scroll(function(){
-    if ($(window).width() <= 600) {
-        $("#Logo").css("opacity", 1 - $(window).scrollTop() / 95);
-}});
-
 document.oncontextmenu = function() { 
     return false; 
 }

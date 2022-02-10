@@ -82,12 +82,12 @@ img {
 }
 
 .navbar-toggle:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .navbar-toggle:active {
-background-color: gray;
-    border-radius: 100%;
+    background-color: yellow;
+    border-radius: 50%;
 }
 
 .navbar-collapse {

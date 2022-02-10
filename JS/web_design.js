@@ -5,12 +5,12 @@ var ready = (callback) => {
 
 $(window).scroll(function(){
     if ($(window).width() > 600) {
-        $("#Logo").css("opacity", 1 - $(window).scrollTop() / 625);
+        $("#Logo").css("opacity", 1 - $(window).scrollTop() / 1750);
 }});
 
 $(window).scroll(function(){
     if ($(window).width() <= 600) {
-        $("#Logo").css("opacity", 1 - $(window).scrollTop() / 1100);
+        $("#Logo").css("opacity", 1 - $(window).scrollTop() / 2250);
 }});
 
 document.oncontextmenu = function() { 
