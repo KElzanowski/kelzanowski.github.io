@@ -10,7 +10,7 @@ $(window).scroll(function(){
 
 $(window).scroll(function(){
     if ($(window).width() <= 600) {
-        $("#Logo").css("opacity", 1 - $(window).scrollTop() / 2250);
+        $("#Logo").css("opacity", 1 - $(window).scrollTop() / 2000);
 }});
 
 document.oncontextmenu = function() { 

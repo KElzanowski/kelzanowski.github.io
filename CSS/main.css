@@ -53,12 +53,33 @@ body {
 .description {
     background-color: rgba(26, 26, 26, 0.5);
     border-radius: 1.3rem;
-    padding: 20px;
+    padding: 1em;
 	left: 50%;
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -30%);
     font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.Call_Button {
+    margin-top: 15em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -30%);
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.Call_Button button {
+    background-color: rgba(26, 26, 26, 0.75);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    margin-top: 10px;
+	color: #fff;
+	font-size: 1.6rem;
+    text-align: center;
 }
 
 .description p {
@@ -108,9 +129,9 @@ body {
 
 @media (max-width: 600px) {
     .description {
-        left: 15px;
-	    right: 15px;
-        padding: 0 15px;
+        left: 1em;
+	    right: 1em;
+        padding: 0 1em;
         position: absolute;
         transform: none;
         text-align: center;
@@ -119,6 +140,10 @@ body {
  
     .description p {
         font-size: 1.15rem;
+    }
+
+    .Call_Button button {
+        font-size: 1.45rem;
     }
 
     #Logo {
