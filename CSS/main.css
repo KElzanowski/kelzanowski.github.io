@@ -1,12 +1,26 @@
-body {
+html, body {
     padding: 0;
     margin: 0;
-    background: white;
+    background: rgb(255,255,255);
 }
 
 #page-container {
     position: relative;
     min-height: 102vh;
+}
+
+#content-wrap {
+    padding-bottom: 1em;
+}
+
+.container {
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#Colour_Background {
+    background: linear-gradient(151deg, rgba(255,255,255,1) 0%, rgba(235,90,90,0.5018382352941176) 33%, rgba(235,160,90,0.4990371148459384) 50%, rgba(235,211,90,0.5018382352941176) 66%, rgba(255,255,255,1) 100%);
 }
 
 #Logo {
@@ -26,15 +40,19 @@ body {
 .nav-link {
     color: white !important;
     font-size: 1.3rem;
-    margin-right: 1em !important;
+    margin-right: 2.5em !important;
     text-decoration: none;
     justify-content: flex-end;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .nav-link:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
     color: red !important;
+}
+
+.nav-link:after {
+    font-weight: bold;
 }
 
 .navbar-collapse {
@@ -47,43 +65,21 @@ body {
     background-position: center;
     position: relative;
     vertical-align: middle;
-    display: flex;
 }
 
 .description {
-    background-color: rgba(26, 26, 26, 0.5);
+    background-color: rgba(26, 26, 26, 0.64);
     border-radius: 1.3rem;
     padding: 1em;
 	left: 50%;
 	position: absolute;
 	top: 50%;
-	transform: translate(-50%, -30%);
+	transform: translate(-50%, -25%);
     font-family: 'Nanum Gothic Coding', monospace;
-}
-
-.Call_Button {
-    margin-top: 15em;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -30%);
-    font-family: 'Nanum Gothic Coding', monospace;
-}
-
-.Call_Button button {
-    background-color: rgba(26, 26, 26, 0.75);
-    padding: 0.5rem;
-    border: none;
-    border-radius: 0.6rem;
-    cursor: pointer;
-    margin-top: 10px;
-	color: #fff;
-	font-size: 1.6rem;
-    text-align: center;
 }
 
 .description p {
-    margin-top: 10px;
+    margin-top: 1em;
 	color: #fff;
 	font-size: 1.3rem;
 	line-height: 1.5;
@@ -91,7 +87,7 @@ body {
 }
 
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,0,0)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,0,0)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
   
 .navbar-toggle{
@@ -101,11 +97,12 @@ body {
 }
 
 .navbar-toggle:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 .navbar-toggle:active {
-    background-color: yellow;
+    background-color: orange;
+    height: 2em;
     border-radius: 50%;
 }
 
@@ -113,18 +110,147 @@ body {
     background-color: #1a1a1a;
 }
 
-.page-footer {
+.features {
+	margin: 1em auto;
+	padding: 1em;
+	position: relative;
+}
+
+h1 {
+    color: #1a1a1a;
+    padding-top: 3em;
+    font-family: 'Nanum Gothic Coding', monospace;
+    text-align: center;
+}
+
+#Profile_Picture {
+    width: 30em;
+    display: block;
+    padding-top: 6.5em;
+    border-radius: 50%;
+}
+
+#Profile_Picture:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#Profile_Picture:active {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#Skillset {
+    font-family: 'Nanum Gothic Coding', monospace;
+    padding-top: 5em;
+    color: #1a1a1a;
+	font-size: 1.3rem;
+	line-height: 1.5;
+    text-align: center;
+}
+
+.Bold_Text {
+    font-weight: 600;
+}
+
+.Text_Link {
+    text-decoration: underline;
+    color: #1a1a1a;
+}
+
+.Text_Link:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+#photos {
+    pointer-events: none;
+    margin-top: 5em;
+    -webkit-column-count: 2;
+    -webkit-column-gap:   1em;
+    -moz-column-count:    2;
+    -moz-column-gap:      1em;
+    column-count:         2;
+    column-gap:           1em;  
+}
+  
+#photos img {
+    width: 100%;
+    margin-top: 1em;
+    height: auto !important;
+    border-radius: 1em;
+}
+
+h2 {
+    font-family: 'Nanum Gothic Coding', monospace;
+    padding-top: 2.5em;
+    color: #1a1a1a;
+	font-size: 1.1rem;
+	line-height: 1.5;
+    text-align: center;
+}
+
+#page-footer {
     position: relative;
     width: 100%;
     background-color: white;
     color: #1a1a1a;
-    padding: 25px 0 15px;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     bottom: 0;
+    height: 5em;
 }
+
 .Footer_Text {
+    padding-top: 1.5em;
+    text-align: center;
     font-size: 1.1rem;
+}
+
+@media (max-width: 1200px) {
+    #Profile_Picture {
+        width: 25em;
+    }
+}
+
+@media (max-width: 1000px) {
+    #Profile_Picture {
+        width: 20em;
+    }
+}
+
+@media (max-width: 950px) {
+    #photos {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+    }
+
+    img {
+        border-radius: 0.5em;
+    }
+}
+
+@media (max-width: 800px) {
+    #Profile_Picture {
+        width: 18em;
+    }
+
+    #photos img {
+        border-radius: 0.5em;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-link {
+        margin-right: 1.75em !important;
+    }
+
+    .navbar-collapse {
+        margin-top: 1.5em;
+        background-color: rgba(26, 26, 26, 0.75);
+        width: 50%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -135,7 +261,7 @@ body {
         position: absolute;
         transform: none;
         text-align: center;
-	    transform: translate(0%, -25%);
+	    transform: translate(0%, -35%);
     }
  
     .description p {
@@ -156,5 +282,17 @@ body {
 
     .navbar {
         height: 4em;
+    }
+
+    .page-footer {
+        height: 4em;
+    }
+
+    #Profile_Picture {
+        width: 80%;
+    }
+
+    #Skillset {
+        font-size: 1.2rem;
     }
 }
