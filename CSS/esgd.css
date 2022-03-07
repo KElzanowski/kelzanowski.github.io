@@ -21,7 +21,7 @@ html, body {
 }
 
 #Logo {
-    width: 7.5em;
+    width: 6em;
     position: absolute;
     border-radius: 75px;
     top: 0px;
@@ -173,7 +173,7 @@ h1 {
 
 @media (max-width: 600px) {
     #Logo {
-        width: 6em;
+        width: 4.5em;
     }
 
     .Footer_Text {
