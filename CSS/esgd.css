@@ -1,7 +1,7 @@
 html, body {
     padding: 0;
     margin: 0;
-    background: rgb(255,255,255);
+    background: #1a1a1a !important;
 }
 
 #page-container {
@@ -10,6 +10,7 @@ html, body {
 }
 
 #content-wrap {
+    display: flex;
     padding-bottom: 1em;
 }
 
@@ -17,10 +18,6 @@ html, body {
     position: relative;
     margin-top: 1em;
     margin-bottom: 1em;
-}
-
-#Colour_Background {
-    background: linear-gradient(207deg, rgba(255,255,255,1) 0%, rgba(247,46,6,0.4) 50%, rgba(255,255,255,1) 100%);
 }
 
 #Logo {
@@ -33,12 +30,12 @@ html, body {
 }
 
 .navbar {
-    background: #1a1a1a;
+    background: white;
     height: 5em;
 }
 
 .nav-link {
-    color: white !important;
+    color: #1a1a1a !important;
     font-size: 1.3rem;
     margin-right: 2.5em !important;
     text-decoration: none;
@@ -56,6 +53,7 @@ html, body {
 }
 
 .navbar-collapse {
+    background-color: white !important;
     justify-content: flex-end;
 }
 
@@ -79,10 +77,6 @@ html, body {
     border-radius: 50%;
 }
 
-.navbar-collapse {
-    background-color: #1a1a1a;
-}
-
 .features {
 	margin: 1em auto;
 	padding: 1em;
@@ -99,29 +93,47 @@ html, body {
     color: red;
 }
 
-#photos {
-    pointer-events: none;
-    margin-top: 8em;
-    -webkit-column-count: 2;
-    -webkit-column-gap:   1em;
-    -moz-column-count:    2;
-    -moz-column-gap:      1em;
-    column-count:         2;
-    column-gap:           1em;  
-}
-  
-#photos img {
-    width: 100%;
-    margin-top: 1em;
-    height: auto !important;
-    border-radius: 1em;
+h1 {
+    font-family: 'Nanum Gothic Coding', monospace;
+    color: white;
+    padding-top: 4em;
+    padding-bottom: 1em;
+	line-height: 1.5;
+    text-align: center;
 }
 
-h2 {
+.Other-Headers {
+    padding-top: 2em;
+}
+
+#PVLogo_Container {
+    display: flex;
+    justify-content: center;
+}
+
+#TEOWB_Container1 {
+    display: flex;
+    justify-content: center;
+}
+
+#TEOWB_Container2 {
+    display: flex;
+    justify-content: center;
+}
+
+#PVLogo {
+    width: 50%;
+}
+
+.teowb-image {
+    width: 75%;
+}
+
+.work-text {
     font-family: 'Nanum Gothic Coding', monospace;
-    padding-top: 2.5em;
-    color: #1a1a1a;
-	font-size: 1.1rem;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
 	line-height: 1.5;
     text-align: center;
 }
@@ -133,7 +145,7 @@ h2 {
 #Footer_Section {
     position: relative;
     width: 100%;
-    background-color: white;
+    background: linear-gradient(207deg, rgba(255,255,255,1) 0%, rgba(255,145,123,1) 50%, rgba(255,255,255,1) 100%);
     color: #1a1a1a;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
@@ -145,24 +157,6 @@ h2 {
     padding-top: 1.8em;
     text-align: center;
     font-size: 1.1rem;
-}
-
-@media (max-width: 950px) {
-    #photos {
-    -moz-column-count:    1;
-    -webkit-column-count: 1;
-    column-count:         1;
-    }
-
-    img {
-        border-radius: 0.5em;
-    }
-}
-
-@media (max-width: 800px) {
-    #photos img {
-        border-radius: 0.5em;
-    }
 }
 
 @media (max-width: 767px) {
@@ -192,13 +186,5 @@ h2 {
 
     .page-footer {
         height: 4em;
-    }
-
-    h2 {
-        padding-top: 1em;
-    }
-
-    #photos {
-        margin-top: 6em;
     }
 }
