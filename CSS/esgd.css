@@ -96,19 +96,37 @@ html, body {
 h1 {
     font-family: 'Nanum Gothic Coding', monospace;
     color: white;
-    padding-top: 4em;
+    padding-top: 5em;
     padding-bottom: 1em;
 	line-height: 1.5;
     text-align: center;
 }
 
 .Other-Headers {
-    padding-top: 2em;
+    padding-top: 3em;
+}
+
+#shapingcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+#shapingcon {
+    width: 80%;
 }
 
 #PVLogo_Container {
     display: flex;
     justify-content: center;
+}
+
+#Pro-Visual-Website-Container {
+    display: flex;
+    justify-content: center;
+}
+
+#provisweb {
+    width: 80%;
 }
 
 #TEOWB_Container1 {
@@ -122,17 +140,27 @@ h1 {
 }
 
 #PVLogo {
-    width: 50%;
+    width: 32%;
 }
 
 .teowb-image {
-    width: 75%;
+    width: 64%;
+}
+
+#ukrainecontainer {
+    display: flex;
+    justify-content: center;
+}
+
+#ukraineweb {
+    width: 80%;
 }
 
 .work-text {
+    font-size: 1.2rem;
     font-family: 'Nanum Gothic Coding', monospace;
     color: white;
-    padding-top: 1em;
+    padding-top: 1.5em;
     padding-bottom: 1em;
 	line-height: 1.5;
     text-align: center;
@@ -168,6 +196,30 @@ h1 {
         margin-top: 1.5em;
         background-color: rgba(26, 26, 26, 0.75);
         width: 50%;
+    }
+
+    #provisweb {
+        width: 100%;
+    }
+
+    .teowb-image {
+        width: 100%;
+    }
+
+    #shapingcon {
+        width: 100%;
+    }
+
+    #ukraineweb {
+        width: 100%;
+    }
+
+    .work-text {
+        font-size: 1rem;
+    }
+
+    #PVLogo {
+        width: 64%;
     }
 }
 
