@@ -106,13 +106,73 @@ h1 {
     padding-top: 3em;
 }
 
-#shapingcontainer {
-    display: flex;
-    justify-content: center;
+#Shaping-Title {
+    padding-top: 3em;
+    padding-bottom: 0;
 }
 
-#shapingcon {
+#Shaping-Text {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.carousel {
+    position: relative;
+    margin: 0 auto;
     width: 80%;
+    height: 800px
+}
+
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.carousel__track-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel__track {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 100%;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel__button img {
+    width: 4em;
+}
+
+.carousel__button--left {
+    left: -8em;
+}
+
+.carousel__button--right {
+    right: -8em;
+}
+
+.is-hidden {
+    display: none;
 }
 
 #PVLogo_Container {
@@ -187,7 +247,76 @@ h1 {
     font-size: 1.1rem;
 }
 
+@media (max-width: 1600px) {
+    .carousel {
+        height: 700px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .carousel {
+        height: 600px;
+    }
+
+    .carousel__button img {
+        width: 3.5em;
+    }
+    
+    .carousel__button--left {
+        left: -7em;
+    }
+    
+    .carousel__button--right {
+        right: -7em;
+    }
+}
+
+@media (max-width: 1200px) {
+    .carousel {
+        height: 525px;
+    }
+
+    #Shaping-Text {
+        padding-top: 1em;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 990px) {
+    .carousel {
+        height: 500px;
+    }
+
+    .carousel__button img {
+        width: 3em;
+    }
+
+    .carousel__button--left {
+        left: -5.5em;
+    }
+    
+    .carousel__button--right {
+        right: -5.5em;
+    }
+}
+
 @media (max-width: 767px) {
+    .carousel {
+        height: 425px;
+    }
+
+    .carousel__button img {
+        width: 2.5em;
+    }
+
+    .carousel__button--left {
+        left: -4.5em;
+    }
+    
+    .carousel__button--right {
+        right: -4.5em;
+    }
+
     .nav-link {
         margin-right: 1.75em !important;
     }
@@ -224,6 +353,22 @@ h1 {
 }
 
 @media (max-width: 600px) {
+    .carousel {
+        height: 325px;
+    }
+
+    .carousel__button img {
+        width: 2.25em;
+    }
+
+    .carousel__button--left {
+        left: -3.75em;
+    }
+    
+    .carousel__button--right {
+        right: -3.75em;
+    }
+
     #Logo {
         width: 4.5em;
     }
@@ -238,5 +383,42 @@ h1 {
 
     .page-footer {
         height: 4em;
+    }
+}
+
+@media (max-width: 500px) {
+    .carousel {
+        height: 275px;
+    }
+
+    .carousel__button--left {
+        left: -3.5em;
+    }
+    
+    .carousel__button--right {
+        right: -3.5em;
+    }
+
+    #Intro-Text {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .carousel {
+        height: 250px;
+    }
+
+    .carousel__button img {
+        width: 2em;
+    }
+
+    .carousel__button--left {
+        left: -3em;
+    }
+    
+    .carousel__button--right {
+        right: -3em;
     }
 }
