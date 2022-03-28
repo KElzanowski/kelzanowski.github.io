@@ -21,7 +21,7 @@ html, body {
 }
 
 #Logo {
-    width: 6em;
+    width: 8em;
     position: absolute;
     border-radius: 75px;
     top: 0px;
@@ -35,7 +35,6 @@ html, body {
 }
 
 .nav-link {
-    color: #1a1a1a !important;
     font-size: 1.3rem;
     margin-right: 2.5em !important;
     text-decoration: none;
@@ -43,9 +42,18 @@ html, body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+#home-button {
+    color: #e75d58;
+    font-weight: bold;
+}
+
+#work-button {
+    color: #99cc8b;
+    font-weight: bold;
+}
+
 .nav-link:hover {
-    transform: scale(1.15);
-    color: red !important;
+    transform: scale(1.2);
 }
 
 .nav-link:after {
@@ -58,7 +66,7 @@ html, body {
 }
 
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,0,0)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(231,93,88)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
   
 .navbar-toggle{
@@ -72,7 +80,7 @@ html, body {
 }
 
 .navbar-toggle:active {
-    background-color: orange;
+    background-color: #99cc8b;
     height: 2em;
     border-radius: 50%;
 }
@@ -83,18 +91,20 @@ html, body {
 	position: relative;
 }
 
-.Text_Link {
-    text-decoration: underline;
-    color: #1a1a1a;
+#Exhibition-Title {
+    width: 95%;
+    padding-top: 12.5em;
+    pointer-events: none;
 }
 
-.Text_Link:hover {
-    text-decoration: underline;
-    color: red;
+#Intro-Text {
+    font-size: 1.4rem;
+    padding-top: 6.5em;
 }
 
 h1 {
-    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
     color: white;
     padding-top: 5em;
     padding-bottom: 1em;
@@ -112,15 +122,15 @@ h1 {
 }
 
 #Shaping-Text {
-    padding-top: 1em;
+    padding-top: 0;
     padding-bottom: 1em;
 }
 
 .carousel {
     position: relative;
     margin: 0 auto;
-    width: 80%;
-    height: 800px
+    width: 85%;
+    height: 850px
 }
 
 .carousel__image {
@@ -164,23 +174,19 @@ h1 {
 }
 
 .carousel__button--left {
-    left: -8em;
+    z-index: 99;
+    left: 3em;
 }
 
 .carousel__button--right {
-    right: -8em;
+    right: 3em;
 }
 
 .is-hidden {
     display: none;
 }
 
-#PVLogo_Container {
-    display: flex;
-    justify-content: center;
-}
-
-#Pro-Visual-Website-Container {
+.Container {
     display: flex;
     justify-content: center;
 }
@@ -189,39 +195,30 @@ h1 {
     width: 80%;
 }
 
-#TEOWB_Container1 {
-    display: flex;
-    justify-content: center;
-}
-
-#TEOWB_Container2 {
-    display: flex;
-    justify-content: center;
-}
-
 #PVLogo {
     width: 32%;
+    padding-bottom: 2.5em;
 }
 
 .teowb-image {
     width: 64%;
 }
 
-#ukrainecontainer {
-    display: flex;
-    justify-content: center;
-}
-
 #ukraineweb {
     width: 80%;
+}
+
+.successful-poster {
+    width: 41%;
+    padding: 1em;
 }
 
 .work-text {
     font-size: 1.2rem;
     font-family: 'Nanum Gothic Coding', monospace;
     color: white;
-    padding-top: 1.5em;
-    padding-bottom: 1em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
 	line-height: 1.5;
     text-align: center;
 }
@@ -242,7 +239,7 @@ h1 {
 }
 
 .Footer_Text {
-    padding-top: 1.8em;
+    padding-top: 1.5rem;
     text-align: center;
     font-size: 1.1rem;
 }
@@ -250,6 +247,14 @@ h1 {
 @media (max-width: 1600px) {
     .carousel {
         height: 700px;
+    }
+
+    .carousel__button--left {
+        left: 1.75em;
+    }
+    
+    .carousel__button--right {
+        right: 1.75em;
     }
 }
 
@@ -263,17 +268,25 @@ h1 {
     }
     
     .carousel__button--left {
-        left: -7em;
+        left: 1.75em;
     }
     
     .carousel__button--right {
-        right: -7em;
+        right: 1.75em;
     }
 }
 
 @media (max-width: 1200px) {
     .carousel {
         height: 525px;
+    }
+
+    .carousel__button--left {
+        left: 0.5em;
+    }
+    
+    .carousel__button--right {
+        right: 0.5em;
     }
 
     #Shaping-Text {
@@ -292,16 +305,17 @@ h1 {
     }
 
     .carousel__button--left {
-        left: -5.5em;
+        left: 1.2em;
     }
     
     .carousel__button--right {
-        right: -5.5em;
+        right: 1.2em;
     }
 }
 
 @media (max-width: 767px) {
     .carousel {
+        width: 100%;
         height: 425px;
     }
 
@@ -310,11 +324,11 @@ h1 {
     }
 
     .carousel__button--left {
-        left: -4.5em;
+        left: 1em;
     }
     
     .carousel__button--right {
-        right: -4.5em;
+        right: 1em;
     }
 
     .nav-link {
@@ -325,6 +339,11 @@ h1 {
         margin-top: 1.5em;
         background-color: rgba(26, 26, 26, 0.75);
         width: 50%;
+    }
+
+    #Shaping-Title {
+        padding-top: 3em;
+        padding-bottom: 0.5em;
     }
 
     #provisweb {
@@ -343,18 +362,37 @@ h1 {
         width: 100%;
     }
 
+    .successful-poster {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 2.5em;
+    }
+
+    #Success-Container {
+        display: inline-block;
+    }
+
     .work-text {
         font-size: 1rem;
     }
 
     #PVLogo {
         width: 64%;
+        padding-bottom: 2.5em;
     }
 }
 
 @media (max-width: 600px) {
+    #Exhibition-Title {
+        padding-top: 12em;
+    }
+
+    #Intro-Text {
+        font-size: 1.2rem;
+    }
+
     .carousel {
-        height: 325px;
+        height: 400px;
     }
 
     .carousel__button img {
@@ -362,15 +400,15 @@ h1 {
     }
 
     .carousel__button--left {
-        left: -3.75em;
+        left: 0.6em;
     }
     
     .carousel__button--right {
-        right: -3.75em;
+        right: 0.6em;
     }
 
     #Logo {
-        width: 4.5em;
+        width: 6.5em;
     }
 
     .Footer_Text {
@@ -392,16 +430,16 @@ h1 {
     }
 
     .carousel__button--left {
-        left: -3.5em;
+        left: 0.3em;
     }
     
     .carousel__button--right {
-        right: -3.5em;
+        right: 0.3em;
     }
 
     #Intro-Text {
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
 }
 
@@ -411,14 +449,14 @@ h1 {
     }
 
     .carousel__button img {
-        width: 2em;
+        width: 1.75em;
     }
 
     .carousel__button--left {
-        left: -3em;
+        left: 0.1em;
     }
     
     .carousel__button--right {
-        right: -3em;
+        right: 0.1em;
     }
 }
