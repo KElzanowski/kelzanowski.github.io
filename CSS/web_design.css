@@ -99,6 +99,15 @@ html, body {
     color: red;
 }
 
+.fade-in {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
 #photos {
     pointer-events: none;
     margin-top: 8em;
