@@ -178,11 +178,11 @@ h1 {
 
 .carousel__button--left {
     z-index: 99;
-    left: 3em;
+    left: 2em;
 }
 
 .carousel__button--right {
-    right: 3em;
+    right: 2em;
 }
 
 .is-hidden {
@@ -264,11 +264,11 @@ h1 {
     }
 
     .carousel__button--left {
-        left: 1.75em;
+        left: 1.5em;
     }
     
     .carousel__button--right {
-        right: 1.75em;
+        right: 1.5em;
     }
 }
 
@@ -282,11 +282,11 @@ h1 {
     }
     
     .carousel__button--left {
-        left: 1.75em;
+        left: 1.25em;
     }
     
     .carousel__button--right {
-        right: 1.75em;
+        right: 1.25em;
     }
 }
 
@@ -315,15 +315,15 @@ h1 {
     }
 
     .carousel__button img {
-        width: 3em;
+        width: 2.75em;
     }
 
     .carousel__button--left {
-        left: 1.2em;
+        left: 0.8em;
     }
     
     .carousel__button--right {
-        right: 1.2em;
+        right: 0.8em;
     }
 }
 
@@ -345,11 +345,11 @@ h1 {
     }
 
     .carousel__button--left {
-        left: 1em;
+        left: 0.9em;
     }
     
     .carousel__button--right {
-        right: 1em;
+        right: 0.9em;
     }
 
     .nav-link {
@@ -434,11 +434,11 @@ h1 {
     }
 
     .carousel__button--left {
-        left: 0.6em;
+        left: 0.5em;
     }
     
     .carousel__button--right {
-        right: 0.6em;
+        right: 0.5em;
     }
 
     #Logo {
@@ -464,12 +464,16 @@ h1 {
         height: 275px;
     }
 
+    .carousel__button img {
+        width: 1.75em;
+    }
+
     .carousel__button--left {
-        left: 0.3em;
+        left: 0.2em;
     }
     
     .carousel__button--right {
-        right: 0.3em;
+        right: 0.2em;
     }
 
     #Intro-Text {
@@ -484,7 +488,7 @@ h1 {
     }
 
     .carousel__button img {
-        width: 1.75em;
+        width: 1.4em;
     }
 
     .carousel__button--left {
