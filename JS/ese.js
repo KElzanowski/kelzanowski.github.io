@@ -8,10 +8,10 @@ ready(() => {
 
 $(window).scroll(function(){
     if ($(window).width() > 600) {
-        $("#Logo").css("opacity", 1 - $(window).scrollTop() / 9000);
+        $("#Logo").css("opacity", 1 - $(window).scrollTop() / 8000);
 }});
 
 $(window).scroll(function(){
     if ($(window).width() <= 600) {
-        $("#Logo").css("opacity", 1 - $(window).scrollTop() / 8000);
+        $("#Logo").css("opacity", 1 - $(window).scrollTop() / 7000);
 }});
