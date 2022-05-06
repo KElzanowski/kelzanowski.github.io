@@ -38,7 +38,7 @@ html, body {
 
 .fade-in {
     opacity: 0;
-    transition: opacity 500ms ease-in;
+    transition: opacity 400ms ease-in;
 }
 
 .fade-in.appear {
@@ -237,6 +237,29 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-family: 'Nanum Gothic Coding', monospace;
+    padding-top: 1em;
+    color: white;
+	font-size: 1.1rem;
+	line-height: 1.5;
+    text-align: center;
+}
+
+.Text_Link {
+    text-decoration: underline;
+    color: white;
+}
+
+.Text_Link:hover {
+    text-decoration: underline;
+    color: #e75d58;
+}
+
+.TL2:hover {
+    color: #99cc8b;
+}
+
 .Bold_Text {
     font-weight: 600;
 }
@@ -390,7 +413,7 @@ h1 {
     }
 
     .koffeecoapp {
-        width: 100%;
+        width: 80%;
         margin-top: -2em;
     }
 
@@ -400,6 +423,7 @@ h1 {
 
     #koffeecocontainer {
         display: inline-block;
+        text-align: center;
     }
 
     #Success-Container {
