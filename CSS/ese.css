@@ -176,6 +176,10 @@ h1 {
     width: 4em;
 }
 
+.carousel__button img:hover {
+    transform: scale(1.25);
+}
+
 .carousel__button--left {
     z-index: 99;
     left: 2em;
