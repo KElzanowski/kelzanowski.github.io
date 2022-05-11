@@ -215,6 +215,10 @@ h1 {
     width: 64%;
 }
 
+#modulefile {
+    width: 38%;
+}
+
 .successful-poster {
     width: 41%;
     padding: 1em;
@@ -410,6 +414,10 @@ h2 {
         width: 100%;
     }
 
+    #modulefile {
+        width: 100%;
+    }
+
     .successful-poster {
         width: 100%;
         padding: 0;
@@ -450,7 +458,7 @@ h2 {
     }
 
     #Intro-Text {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .carousel {
