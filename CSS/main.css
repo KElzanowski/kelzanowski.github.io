@@ -20,7 +20,7 @@ html, body {
 }
 
 #Colour_Background {
-    background: linear-gradient(153deg, rgba(255,255,255,1) 15%, rgba(247,46,6,0.4) 50%, rgba(255,255,255,1) 100%);
+    background: #1a1a1a;
 }
 
 #Logo {
@@ -48,7 +48,7 @@ html, body {
 
 .nav-link:hover {
     transform: scale(1.15);
-    color: red !important;
+    color: #ff6a57 !important;
 }
 
 .nav-link:after {
@@ -90,7 +90,7 @@ html, body {
 }
 
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,0,0)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
   
 .navbar-toggle{
@@ -100,11 +100,11 @@ html, body {
 }
 
 .navbar-toggle:hover {
-    transform: scale(1.15);
+    transform: scale(1.2);
 }
 
 .navbar-toggle:active {
-    background-color: orange;
+    background-color: #ff6a57;
     height: 2em;
     border-radius: 50%;
 }
@@ -129,7 +129,7 @@ html, body {
 }
 
 h1 {
-    color: #1a1a1a;
+    color: white;
     padding-top: 4em;
     font-family: 'Nanum Gothic Coding', monospace;
     text-align: center;
@@ -154,7 +154,7 @@ h1 {
     font-family: 'Nanum Gothic Coding', monospace;
     padding-top: 6.5em;
     padding-bottom: 4em;
-    color: #1a1a1a;
+    color: white;
 	font-size: 1.3rem;
 	line-height: 1.5;
     text-align: center;
@@ -166,12 +166,12 @@ h1 {
 
 .Text_Link {
     text-decoration: underline;
-    color: #1a1a1a;
+    color: white;
 }
 
 .Text_Link:hover {
     text-decoration: underline;
-    color: red;
+    color: #ff6a57;
 }
 
 #thumbnails {
@@ -204,7 +204,7 @@ h1 {
 h2 {
     font-family: 'Nanum Gothic Coding', monospace;
     padding-top: 4em;
-    color: #1a1a1a;
+    color: white;
 	font-size: 1.1rem;
 	line-height: 1.5;
     text-align: center;
@@ -218,7 +218,7 @@ h2 {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     bottom: 0;
-    height: 5em;
+    height: 5.5em;
 }
 
 .Footer_Text {

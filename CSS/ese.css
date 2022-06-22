@@ -1,7 +1,7 @@
 html, body {
     padding: 0;
     margin: 0;
-    background: #1a1a1a !important;
+    background: rgb(255,255,255);
 }
 
 #page-container {
@@ -23,8 +23,12 @@ html, body {
     pointer-events: none;
 }
 
+#Colour_Background {
+    background: #1a1a1a;
+}
+
 .navbar {
-    background: white;
+    background: #1a1a1a;
     height: 5em;
 }
 
@@ -45,18 +49,14 @@ html, body {
     opacity: 1;
 }
 
-#home-button {
-    color: #e75d58;
-    font-weight: bold;
-}
-
-#work-button {
-    color: #99cc8b;
+#nav-buttons {
+    color: white;
     font-weight: bold;
 }
 
 .nav-link:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
+    color: #ff6a57 !important;
 }
 
 .nav-link:after {
@@ -64,12 +64,12 @@ html, body {
 }
 
 .navbar-collapse {
-    background-color: white !important;
+    background-color: #1a1a1a;
     justify-content: flex-end;
 }
 
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(231,93,88)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
   
 .navbar-toggle{
@@ -83,7 +83,7 @@ html, body {
 }
 
 .navbar-toggle:active {
-    background-color: #99cc8b;
+    background-color: #ff6a57;
     height: 2em;
     border-radius: 50%;
 }
@@ -261,11 +261,7 @@ h2 {
 
 .Text_Link:hover {
     text-decoration: underline;
-    color: #e75d58;
-}
-
-.TL2:hover {
-    color: #99cc8b;
+    color: #ff6a57;
 }
 
 .Bold_Text {
@@ -275,7 +271,7 @@ h2 {
 #Footer_Section {
     position: relative;
     width: 100%;
-    background: linear-gradient(207deg, rgba(255,255,255,1) 0%, rgba(255,145,123,1) 50%, rgba(255,255,255,1) 100%);
+    background: white;
     color: #1a1a1a;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
