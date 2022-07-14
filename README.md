@@ -1,2 +1,2 @@
 # kelzadesigns
-My portfolio website created using HTML, CSS and a little bit of JavaScript.
+My website and UI design portfolio website created using HTML, CSS, Bootstrap and a little bit of JavaScript.

@@ -4,6 +4,8 @@ html, body {
     background: rgb(255,255,255);
 }
 
+@font-face { font-family: Eras_Bold_ITC; src: url("../Fonts/ErasBoldITC.ttf"); } 
+
 #page-container {
     position: relative;
     min-height: 102vh;
@@ -43,12 +45,12 @@ html, body {
     margin-right: 2.5em !important;
     text-decoration: none;
     justify-content: flex-end;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Eras_Bold_ITC";
 }
 
 .nav-link:hover {
     transform: scale(1.15);
-    color: #ff6a57 !important;
+    color: #ffa500 !important;
 }
 
 .nav-link:after {
@@ -61,7 +63,7 @@ html, body {
 
 .header {
     height: 100%;
-    background-image:url("../Content/Front Page/Nordic Mountains Half.png");
+    background-image:url("../Content/Front Page/Website Banner.webp");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -70,23 +72,42 @@ html, body {
     background-attachment: fixed;
 }
 
-.description {
-    background-color: rgba(26, 26, 26, 0.64);
-    border-radius: 1.3rem;
-    padding: 1em;
-	left: 50%;
-	position: absolute;
-	top: 50%;
-	transform: translate(-50%, -25%);
+#Skillset {
+    padding-top: 3.5em;
     font-family: 'Nanum Gothic Coding', monospace;
-}
-
-.description p {
-    margin-top: 1em;
 	color: #fff;
 	font-size: 1.3rem;
 	line-height: 1.5;
-    text-align: center;
+    text-align: left;
+}
+
+.Headline_Container_1 {
+    padding-top: 5em;
+}
+
+.Headline_Container_2 {
+    padding-top: 3.5em;
+}
+
+.Headline_Container_3 {
+    padding-top: 0em;
+}
+
+
+#Title-1 {
+    width: 24em;
+}
+
+#Title-2 {
+    width: 13.5em;
+}
+
+#Title-3 {
+    width: 22em;
+}
+
+#Title-4 {
+    width: 19em;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -104,7 +125,7 @@ html, body {
 }
 
 .navbar-toggle:active {
-    background-color: #ff6a57;
+    background-color: #ff0092;
     height: 2em;
     border-radius: 50%;
 }
@@ -121,7 +142,7 @@ html, body {
 
 .fade-in {
     opacity: 0;
-    transition: opacity 400ms ease-in;
+    transition: opacity 350ms ease-in;
 }
 
 .fade-in.appear {
@@ -130,13 +151,14 @@ html, body {
 
 h1 {
     color: white;
-    padding-top: 4em;
+    padding-top: 2em;
     font-family: 'Nanum Gothic Coding', monospace;
-    text-align: center;
+    text-align: left;
 }
 
 #PP_Container {
-    padding-top: 6.5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 #Profile_Picture {
@@ -150,14 +172,13 @@ h1 {
     
 }
 
-#Skillset {
+#Description {
     font-family: 'Nanum Gothic Coding', monospace;
-    padding-top: 6.5em;
+    padding-top: 4em;
     padding-bottom: 4em;
     color: white;
 	font-size: 1.3rem;
 	line-height: 1.5;
-    text-align: center;
 }
 
 .Bold_Text {
@@ -171,43 +192,33 @@ h1 {
 
 .Text_Link:hover {
     text-decoration: underline;
-    color: #ff6a57;
+    color: #ffa500;
 }
 
-#thumbnails {
-    display: flex;
-    margin-top: 7em;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 11em;
-    -moz-column-count:    2;
-    -moz-column-gap: 11em;
-    column-count:         2;
-    column-gap: 11em;  
+#photos {
+    pointer-events: none;
+    margin-top: 4em;
+    -webkit-column-count: 3;
+    -webkit-column-gap:   1em;
+    -moz-column-count:    3;
+    -moz-column-gap:      1em;
+    column-count:         3;
+    column-gap:           1em;  
 }
 
-#thumbnails a {
-    width: 40%;
-}
-  
-#thumbnails img {
-    margin: auto;
+#photos img {
     width: 100%;
+    margin-top: 1em;
     height: auto !important;
-    border-radius: 2em;
-}
-
-#thumbnails img:hover {
-    transform: scale(1.1);
-    border-radius: 2em;
 }
 
 h2 {
     font-family: 'Nanum Gothic Coding', monospace;
-    padding-top: 4em;
+    padding-top: 2em;
     color: white;
 	font-size: 1.1rem;
 	line-height: 1.5;
-    text-align: center;
+    text-align: left;
 }
 
 #Footer_Section {
@@ -215,7 +226,7 @@ h2 {
     width: 100%;
     background-color: white;
     color: #1a1a1a;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Eras_Bold_ITC";
     text-align: center;
     bottom: 0;
     height: 5.5em;
@@ -227,88 +238,203 @@ h2 {
     font-size: 1.1rem;
 }
 
-@media (max-width: 1868px) {
+@media (max-width: 1540px) {
     #PP_Container {
-        padding-top: 7.5em;
-    }
-}
-
-@media (max-width: 1758px) {
-    #PP_Container {
-        padding-top: 8.5em;
-    }
-
-    #thumbnails {
-        margin-top: 2em;
-        -webkit-column-gap: 9em;
-        -moz-column-gap: 9em;
-        column-gap: 9em;  
+        padding-top: 4em;
     }
 }
 
 @media (max-width: 1346px) {
-    #PP_Container {
-        padding-top: 10em;
+    .Headline_Container_1 {
+        padding-top: 6em;
     }
 
-    #thumbnails {
-        -webkit-column-gap: 8em;
-        -moz-column-gap: 8em;
-        column-gap: 8em;  
+    #PP_Container {
+        padding-top: 4.7em;
+        padding-bottom: 0;
+    }
+
+    #Title-1 {
+        width: 20em;
+    }
+    
+    #Title-2 {
+        width: 10em;
+    }
+    
+    #Title-3 {
+        width: 18em;
+    }
+    
+    #Title-4 {
+        width: 15em;
+    }
+
+    #photos {
+        margin-top: 3.5em;
+        -webkit-column-count: 2;
+        -moz-column-count:    2;
+        column-count:         2;
+    }
+
+    h2 {
+        padding-top: 2.5em;
+    }
+
+    .Headline_Container_2 {
+        padding-top: 4.5em;
+    }
+}
+
+@media (max-width: 1250px) {
+    .header {
+        background-image:url("../Content/Front Page/Website Banner 2.webp");
+    }
+
+    h1 {
+        font-size: 0.3rem;
     }
 }
 
 @media (max-width: 1200px) {
     #PP_Container {
-        padding-top: 10.5em;
+        padding-top: 6.3em;
     }
 
     #Profile_Picture {
-        width: 25em;
+        width: 22.5em;
     }
 
-    #thumbnails {
-        -webkit-column-gap: 7em;
-        -moz-column-gap: 7em;
-        column-gap: 7em;  
+    .Headline_Container_1 {
+        padding-top: 7em;
+    }
+
+    .Headline_Container_2 {
+        padding-top: 6.5em;
+    }
+
+    #Skillset {
+        padding-top: 4.8em;
+    }
+
+    #Description {
+        padding-bottom: 0em;
+    }
+
+    .nav-link {
+        margin-right: 2em !important;
     }
 }
 
 @media (max-width: 1000px) {
+    .Headline_Container_1 {
+        padding-top: 7.5em;
+    }
+
+    .Headline_Container_2 {
+        padding-top: 7.5em;
+    }
+
     #PP_Container {
-        padding-top: 15em;
+        padding-top: 10em;
     }
 
     #Profile_Picture {
         width: 20em;
     }
 
-    #thumbnails {
-        -webkit-column-gap: 4em;
-        -moz-column-gap: 4em;
-        column-gap: 4em;  
+    #Title-1 {
+        width: 18em;
+    }
+    
+    #Title-2 {
+        width: 9em;
+    }
+    
+    #Title-3 {
+        width: 16em;
+    }
+    
+    #Title-4 {
+        width: 13em;
+    }
+
+    .nav-link {
+        margin-right: 1.5em !important;
+    }
+}
+
+@media (max-width: 990px) {
+    #PP_Container {
+        padding-top: 7em;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        background-image:url("../Content/Front Page/Website Banner 3.webp");
+    }
+
+    #PP_Container {
+        padding-top: 7.8em;
+    }
+
+    #Title-1 {
+        width: 16em;
+    }
+    
+    #Title-2 {
+        width: 8.5em;
+    }
+    
+    #Title-3 {
+        width: 14.5em;
+    }
+    
+    #Title-4 {
+        width: 12em;
     }
 }
 
 @media (max-width: 800px) {
     #PP_Container {
-        padding-top: 20em;
+        padding-top: 11em;
     }
 
     #Profile_Picture {
         width: 18em;
     }
-
-    #thumbnails img {
-        border-radius: 1em;
-        margin-top: 2em;
-        -webkit-column-gap: 2.5em;
-        -moz-column-gap: 2.5em;
-        column-gap: 2.5em;  
-    }
 }
 
 @media (max-width: 767px) {
+    .Headline_Container_1 {
+        text-align: center;
+    }
+
+    .Headline_Container_2 {
+        text-align: center;
+    }
+
+    .Headline_Container_3 {
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    
+    #Description {
+        text-align: center;
+    }
+
+    #Skillset {
+        text-align: center;
+    }
+
     .nav-link {
         margin-right: 1.75em !important;
     }
@@ -320,56 +446,28 @@ h2 {
     }
 
     #PP_Container {
-        padding-top: 7em;
+        padding-top: 6em;
     }
 
     #Profile_Picture {
         width: 25em;
     }
 
-    #thumbnails {
-        display: block;
-        width: 100%;
-        -moz-column-count: 1;
+    #photos {
+        margin-top: 4em;
         -webkit-column-count: 1;
-        column-count: 1;
-    }
-
-    #thumbnails a {
-        display: block;
-        margin: auto;
-        width: 80%;
-    }
-    
-    #thumbnails img {
-        display: flex;
-        width: 100%;
-        border-radius: 2em;
-        margin-bottom: 2em;
+        -moz-column-count:    1;
+        column-count:         1;
     }
 
     #Skillset {
-        padding-bottom: 2em;
+        padding-bottom: 0em;
     }
 }
 
 @media (max-width: 600px) {
-    .description {
-        left: 1em;
-	    right: 1em;
-        padding: 0 1em;
-        position: absolute;
-        transform: none;
-        text-align: center;
-	    transform: translate(0%, -35%);
-    }
- 
-    .description p {
+    #Description {
         font-size: 1.15rem;
-    }
-
-    .Call_Button button {
-        font-size: 1.45rem;
     }
 
     #Logo {
@@ -389,37 +487,74 @@ h2 {
     }
 
     #Profile_Picture {
-        width: 80%;
+        width: 75%;
     }
 
     #Skillset {
-        font-size: 1.2rem;
-        padding-top: 5em;
-        padding-bottom: 1em;
-    }
-
-    h1 {
-        padding-top: 2em;
+        font-size: 1.15rem;
     }
 
     h2 {
-        padding-top: 1em;
+        padding-top: 2em;
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        background-image:url("../Content/Front Page/Website Banner 4.webp");
     }
 
-    #thumbnails {
-        margin-top: 2em;
+    #Title-1 {
+        width: 14.5em;
+    }
+    
+    #Title-2 {
+        width: 7.5em;
+    }
+    
+    #Title-3 {
+        width: 13em;
     }
 
-    #thumbnails a {
-        width: 100%;
+    #photos {
+        margin-top: 3em;
+    }
+    
+    #Title-4 {
+        width: 11em;
+    }
+}
+
+@media (max-width: 450px) {
+    .header {
+        background-image:url("../Content/Front Page/Website Banner 5.webp");
     }
 
-    #thumbnails img {
-        width: 90%;
-        margin-bottom: 2.25em;
+    .Headline_Container_1 {
+        padding-top: 5em;
     }
 
-    #thumbnails img:hover {
-        border-radius: 2em;
+    .Headline_Container_2 {
+        padding-top: 5em;
+    }
+
+    #PP_Container {
+        padding-top: 5em;
+    }
+
+    #Title-1 {
+        width: 14em;
+    }
+    
+    #Title-2 {
+        width: 7em;
+    }
+    
+    #Title-3 {
+        width: 12.5em;
+    }
+    
+    #Title-4 {
+        width: 10.5em;
     }
 }
