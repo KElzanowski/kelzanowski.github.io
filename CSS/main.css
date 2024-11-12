@@ -166,22 +166,11 @@ h1 {
     display: block;
     width: 25em;
     border-radius: 50%;
-    border-radius: 50%;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
 }
 
-/* Enhanced bounce animation */
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    20% {
-        transform: translateY(-50px); /* Bounce higher */
-    }
-    60% {
-        transform: translateY(-25px); /* Smaller bounce */
-    }
+#Profile_Picture:hover {
+    transform: scale(1.15);
+    
 }
 
 #Description {
@@ -208,22 +197,7 @@ h1 {
 }
 
 #photos {
-    margin-top: 4em;
-    -webkit-column-count: 2;
-    -webkit-column-gap:   1em;
-    -moz-column-count:    2;
-    -moz-column-gap:      1em;
-    column-count:         2;
-    column-gap:           1em;  
-}
-
-#photos img {
-    width: 100%;
-    margin-top: 1em;
-    height: auto !important;
-}
-
-#photos2 {
+    pointer-events: none;
     margin-top: 4em;
     -webkit-column-count: 3;
     -webkit-column-gap:   1em;
