@@ -20,7 +20,7 @@ const profilePic = document.getElementById('Profile_Picture');
 
 // Add both mouseenter (for desktop) and touchstart (for mobile) events
 function triggerBounce() {
-    profilePic.style.animation = 'bounce 1.25s ease';
+    profilePic.style.animation = 'bounce 1.15s ease';
 }
 
 // Remove animation after it completes, so it can be re-triggered
