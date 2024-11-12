@@ -15,3 +15,23 @@ $(window).scroll(function(){
     if ($(window).width() <= 600) {
         $("#Logo").css("opacity", 1 - $(window).scrollTop() / 6400);
 }});
+
+const profilePic = document.getElementById('Profile_Picture');
+
+// Add both mouseenter (for desktop) and touchstart (for mobile) events
+function triggerBounce() {
+    profilePic.style.animation = 'bounce 1.25s ease';
+}
+
+// Remove animation after it completes, so it can be re-triggered
+function removeBounce() {
+    profilePic.style.animation = '';
+}
+
+// Trigger bounce on hover (desktop) or tap (mobile)
+profilePic.addEventListener('mouseenter', triggerBounce);
+profilePic.addEventListener('click', triggerBounce); // For mobile tap
+profilePic.addEventListener('touchstart', triggerBounce); // For mobile touch
+
+// Listen for the end of the animation to reset it
+profilePic.addEventListener('animationend', removeBounce);
