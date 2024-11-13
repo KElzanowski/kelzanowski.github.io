@@ -45,3 +45,13 @@ document.addEventListener('touchstart', function() {
         // If :hover is unsupported, this will simply be ignored
     }
 }, { passive: true });
+
+// Select all interactive elements
+const interactiveElements = document.querySelectorAll('.navlink, .image');
+
+// Remove focus after click to prevent "sticking"
+interactiveElements.forEach(element => {
+    element.addEventListener('click', () => {
+        element.blur(); // Removes focus immediately after clicking
+    });
+});

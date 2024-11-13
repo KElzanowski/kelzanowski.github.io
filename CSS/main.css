@@ -9,6 +9,10 @@ body, html {
     overscroll-behavior: auto;
 }
 
+body {
+    -webkit-overflow-scrolling: touch;
+}
+
 @font-face { font-family: Eras_Bold_ITC; src: url("../Fonts/ErasBoldITC.ttf"); } 
 
 #page-container {
@@ -402,10 +406,17 @@ h2 {
 }
 
 /* Disable pointer events on mobile to avoid scroll lock */
-@media (max-width: 767px) {
+@media (hover: hover) and (max-width: 767px){
     .navlink:hover,
     .image:hover {
         pointer-events: none;
+    }
+}
+
+@media (hover: none) {
+    .navlink:focus,
+    .image:focus {
+        outline: none;
     }
 }
 
@@ -745,7 +756,7 @@ h2 {
 
     .swiper-button-next,
     .swiper-button-prev {
-        transform: scale(0.7) translateY(-50%) !important; /* Scale down */
+        transform: scale(0.6) translateY(-50%) !important; /* Scale down */
         top: 55% !important; /* Center vertically */
     }
 }
