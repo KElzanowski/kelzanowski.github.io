@@ -394,6 +394,21 @@ h2 {
     font-size: 1.1rem;
 }
 
+@media (hover: hover) {
+    .navlink:hover,
+    .image:hover {
+        pointer-events: auto; /* Maintain regular hover for desktop */
+    }
+}
+
+/* Disable pointer events on mobile to avoid scroll lock */
+@media (max-width: 767px) {
+    .navlink:hover,
+    .image:hover {
+        pointer-events: none;
+    }
+}
+
 @media (max-width: 1540px) {
     #PP_Container {
         padding-top: 4em;
@@ -492,6 +507,10 @@ h2 {
         width: 85%;
         height: 85%;
     }
+
+    .Headline_Container_1 {
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -534,11 +553,19 @@ h2 {
     .swiper-pagination {
         display: none;
     }
+
+    .Headline_Container_1 {
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 990px) {
     #PP_Container {
         padding-top: 7em;
+    }
+
+    .Headline_Container_1 {
+        padding-top: 0;
     }
 }
 
@@ -566,6 +593,10 @@ h2 {
     #Title-4 {
         width: 12em;
     }
+
+    .Headline_Container_1 {
+        padding-top: 0;
+    }
     
     #photos2 {
         margin-top: 4em;
@@ -588,6 +619,10 @@ h2 {
         width: 90%;
         height: 90%;
     }
+
+    .Headline_Container_1 {
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -609,6 +644,10 @@ h2 {
 
     h2 {
         text-align: center;
+    }
+
+    .Headline_Container_1 {
+        padding-top: 0;
     }
     
     #Description {
@@ -650,8 +689,8 @@ h2 {
 
     .swiper-button-next,
     .swiper-button-prev {
-        transform: scale(0.7) translateY(-50%) !important; /* Scale down */
-        top: 50% !important; /* Center vertically */
+        transform: scale(0.8) translateY(-50%) !important; /* Scale down */
+        top: 55% !important; /* Center vertically */
     }
 
     .swiper-container {
@@ -667,6 +706,10 @@ h2 {
 
     #Logo {
         width: 6em;
+    }
+
+    .Headline_Container_1 {
+        padding-top: 0;
     }
 
     .Footer_Text {
@@ -702,14 +745,22 @@ h2 {
 
     .swiper-button-next,
     .swiper-button-prev {
-        transform: scale(0.6) translateY(-50%) !important; /* Scale down */
-        top: 50% !important; /* Center vertically */
+        transform: scale(0.7) translateY(-50%) !important; /* Scale down */
+        top: 55% !important; /* Center vertically */
     }
 }
 
 @media (max-width: 575px) {
     .header {
         background-image:url("../Content/Front Page/Website Banner 4.webp");
+    }
+
+    .Headline_Container_1 {
+        padding-top: 0;
+    }
+
+    .Headline_Container_3 {
+        padding-top: 5em;
     }
 
     #Title-1 {
@@ -739,6 +790,10 @@ h2 {
     }
 
     .Headline_Container_1 {
+        padding-top: 0;
+    }
+
+    .Headline_Container_3 {
         padding-top: 5em;
     }
 
