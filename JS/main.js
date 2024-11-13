@@ -35,3 +35,13 @@ profilePic.addEventListener('touchstart', triggerBounce); // For mobile touch
 
 // Listen for the end of the animation to reset it
 profilePic.addEventListener('animationend', removeBounce);
+
+document.addEventListener('touchstart', function() {
+    // Remove hover classes on touch devices
+    try {
+        const hoveredElements = document.querySelectorAll(':hover');
+        hoveredElements.forEach(el => el.classList.remove('hover'));
+    } catch (e) {
+        // If :hover is unsupported, this will simply be ignored
+    }
+}, { passive: true });
