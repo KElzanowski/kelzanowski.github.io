@@ -3,7 +3,7 @@ const slides = Array.from(track.children); /* Creates an array from the children
 const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
 
-const slideWidth = slides[0].getBoundingClientRect().width; /* Grabs the width size of the carousel image, even on resize. */
+const slideWidth = slides[0].offsetWidth;
 
 // Arrange slides next to each other.
 

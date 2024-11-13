@@ -5,11 +5,20 @@ html, body {
     overflow-x: hidden;
 }
 
+body, html {
+    overscroll-behavior: auto;
+}
+
 @font-face { font-family: Eras_Bold_ITC; src: url("../Fonts/ErasBoldITC.ttf"); } 
 
 #page-container {
     position: relative;
     min-height: 102vh;
+}
+
+.fixed-element {
+    z-index: 10;
+    pointer-events: none; /* Prevents blocking scroll if the element is purely decorative */
 }
 
 #content-wrap {
@@ -205,6 +214,14 @@ h1 {
 .Text_Link:hover {
     text-decoration: underline;
     color: #ffa500;
+}
+
+.Pink_Link {
+    color: white;
+}
+
+.Pink_Link:hover {
+    color: #ff0092;
 }
 
 #photos {
